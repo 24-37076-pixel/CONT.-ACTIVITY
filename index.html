@@ -1,0 +1,216 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: linear-gradient(to right, #6e5443, #b8a18c);
+    color: #f5e6d8;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #a68c77;
+    padding: 10px 20px;
+    border-bottom: 3px solid black;
+}
+
+.nav-links button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: 2px solid black;
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.search input {
+    border: 2px solid black;
+    padding: 5px;
+    background: transparent;
+}
+
+/* SECTION */
+.section {
+    padding: 40px;
+}
+
+/* GALLERY */
+.gallery-box {
+    background: #d8c8b8;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-box img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* INTRO TEXT */
+.intro {
+    margin-top: 40px;
+}
+
+.intro h1 {
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.intro p {
+    max-width: 700px;
+    font-size: 14px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* SECOND SECTION */
+.split {
+    display: flex;
+    margin-top: 50px;
+}
+
+/* LEFT IMAGE */
+.left {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.left img {
+    width: 80%;
+    border: 5px solid #d8c8b8;
+}
+
+/* RIGHT SIDE */
+.right {
+    width: 60%;
+    position: relative;
+    padding: 50px;
+}
+
+/* TORN EFFECT */
+.right::before {
+    content: "";
+    position: absolute;
+    left: -60px;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    background: radial-gradient(circle at left, #6e5443 45%, transparent 46%);
+}
+
+/* TEXT */
+.right h2 {
+    font-size: 30px;
+}
+
+.right p {
+    max-width: 400px;
+    font-size: 14px;
+}
+
+/* BUTTONS */
+.nav-btns {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.nav-btns button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-links">
+        <button>Home</button>
+        <button>About</button>
+        <button>Projects</button>
+        <button>Contact</button>
+    </div>
+
+    <div class="logo">KC</div>
+
+    <div class="search">
+        <input type="text" placeholder="Search">
+    </div>
+</div>
+
+<!-- FIRST SECTION -->
+<div class="section">
+
+    <div class="gallery-box">
+        <img src="img1.jpg">
+        <img src="img2.jpg">
+        <img src="img3.jpg">
+    </div>
+
+    <div class="intro">
+        <h1>Hello, I am</h1>
+        <h1>Krizziah Coleen P. Villanueva</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <button class="btn">Get Started</button>
+    </div>
+
+</div>
+
+<!-- SECOND SECTION -->
+<div class="section split">
+
+    <div class="left">
+        <img src="profile.jpg">
+    </div>
+
+    <div class="right">
+        <h2>Meet Krizziah Coleen</h2>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        </p>
+
+        <div class="nav-btns">
+            <button>Previous</button>
+            <button>Proceed</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
